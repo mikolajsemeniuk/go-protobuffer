@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package log.v1;
+
+option go_package = "api/v1;s2";
+
+message Record {
+    string value = 1;
+    uint64 offset = 2;
+}
